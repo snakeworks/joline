@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <title>Canvas yey</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        p {
+            color: gray;
+            font-size: small;
+        }
+        
+        #loginScreen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 120px;
+            margin-right: 120px;
+            height: 100vh;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            width: 100%;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        input, button {
+            padding: 8px;
+            border-radius: 4px;
+            border-width: 1px;
+            width: 100%;
+            box-sizing: content-box
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div id="loginScreen" class="column">
+        <h1>Joline</h1>
+        <input id="usernameInput" type="text" placeholder="Username"/>
+        <input type="color" id="colorInput" name="color" value="#e66465"/>
+        <button id="joinButton">Join</button>
+        <p>test-0.0.1</p>
+    </div>
+    
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <script src="/index.js"></script>
+</body>
+</html>
