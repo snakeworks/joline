@@ -92,7 +92,7 @@ function joinServer() {
 
     joinButton.disabled = true;
 
-    socket = new WebSocket("ws://192.168.0.9:3000");
+    socket = new WebSocket("ws://localhost:3000");
 
     socket.addEventListener("open", () => {
         loginScreen.style.display = "none";

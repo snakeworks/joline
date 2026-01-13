@@ -45,7 +45,7 @@ function generatePlayerId() {
 
 const server = createServer(handler)
 server.listen(
-    3000, "192.168.0.9",
+    3000,
     () => {
         console.log(`Server listening on port ${port}`)
     }
